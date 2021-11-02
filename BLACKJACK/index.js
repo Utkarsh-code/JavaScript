@@ -67,10 +67,13 @@ else{
 function newcard(){
 	
 	if(isalive===true && hasblackjack===false){
-		let card=getrandom()
+	let card=getrandom()
 	sum+=card
 	cards.push(card)
 	rendergame()
+	}
+	else{
+		cards=[]
 	}
 	
 }
